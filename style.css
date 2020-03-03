@@ -1,0 +1,107 @@
+*{
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #c2c2c2;
+    overflow-wrap: break-word;
+}
+
+.box-container{
+    grid-row: auto;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.box{
+    cursor: pointer;
+    grid-row: auto;
+    grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));
+    border: 1px solid #234;
+    margin: 20px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
+    /* background: #456; */
+    /* background-image: url(https://image.freepik.com/free-vector/abstract-realistic-technology-particle-background_23-2148433468.jpg); */
+    /* background: linear-gradient(to right, #357, #567); */
+    /* background: #17141d; */
+    box-shadow: -1rem 0 3rem #000;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px 2px #456;
+    background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.75), #100e17), url(https://image.freepik.com/free-vector/abstract-realistic-technology-particle-background_23-2148433468.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box h3{
+    background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#e52e71));
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    text-shadow: none;
+    font-size: 22px;
+    font-weight: 800;
+    word-wrap: break-word;
+    /* color: #191919;
+    text-shadow: 0px 0px 3px #fff; */
+}
+
+.box p{
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.technology{
+    grid-row: auto;
+    grid-template-columns: repeat(auto-fit, minmax(calc(100% - 60%), 1fr));
+}
+
+.technology span{
+    margin: 0.3rem .2rem;
+    padding: 0.2rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid #e2e5e7;
+    background: linear-gradient(to left, #456, #567);
+    text-align: center;
+    background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#e52e71));
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    text-shadow: none;
+}
+
+.sprite{
+    width: 100px;
+    height: 100px;
+    background: url(https://cdn.tutsplus.com/webdesign/uploads/legacy/tuts/373_sprites/angry_birds.png);
+    background-position: 2% 5%;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation: moveit 5s linear 0s infinite alternate;
+    /* Standard syntax */
+    animation: moveit 5s linear 0s infinite alternate;
+    animation-play-state: running;
+}
+
+.sprite:hover{
+    background-position: 2% 40%;
+    cursor: pointer;
+    animation-play-state: paused;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moveit {
+    from {left: 0;}
+    to {left: 100%;}
+}
+ 
+/* Standard syntax */
+@keyframes moveit {
+    from {left: 0;}
+    to {left: 100%;}
+}
